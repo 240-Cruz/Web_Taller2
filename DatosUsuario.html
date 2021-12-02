@@ -69,7 +69,7 @@
       </div>
 
       <label>Incluir mi Foto </label>
-      <span><input type="submit" value="Examinar..."></span><span> <label>Incluir mi Foto </label></span>
+      <br/><span><input type="submit" value="Examinar..."></span><span> <label>No se ha seleccionado ningun archivo... </label></span>
       <br/><label><input type="checkbox" id="cbox1" value="1_checkbox"> Estudiante...</label><br>
 
       <table style="border: 1px solid #000;">
@@ -114,8 +114,55 @@
                         <option value="34">Bolívar</option>
                         <option value="35">Boyacá</option>
                     </select>
+                    <br/>
+                    <label>Fecha de Nacimiento</label><br/>
+                    
+                    <span class="input-contenedor">
+                        <input type="text">
+                    </span>       
+<span class="input-contenedor">
+    <label>de </label><select name="id_Meses">
+        <option value="1">Enero</option>
+        <option value="2">Febrero</option>
+        <option value="3">Marzo</option>
+        <option value="4">Abril</option>
+        <option value="5">Mayo</option>
+        <option value="6">Junio</option>
+        <option value="7">Julio</option>
+        <option value="8">Agosto</option>
+        <option value="9">Septiembre</option>
+        <option value="10">Octubre</option>
+        <option value="11">Noviembre</option>
+        <option value="12">Diciembre</option>
+    </select> 
+                    <span class="input-contenedor">
+                        <label>de </label>
+                        <input type="text"> 
+                    </span>
+
+
+                    <br/><label>Temas de interés </label><br/>
+<form name="formulario" method="post" action="/send.php">
+    <select name="combo" multiple>
+        <option value="1" label="Administracion de bases de datos"> </option>
+        <option value="2" label="Analisis y programacion"> </option>
+        <option value="3" label="Arquitectura"> </option>
+        <option value="4" label="calidad"> </option>
+        <option value="5" label="ERP,CRM,Business Intelligence"> </option>
+        <option value="6" label="Dieño Integrado de Sistemas Tecnicos"> </option>
+        <option value="7" label="Gerencia de Proyectos"> </option>
+        <option value="8" label="Seguridad de informatica"> </option>
+      </optgroup>
+    </select>
+  </form>
         </tr>
+
+        <br/><span><input type="submit" value="Guardar Cambios"></span>
+        <span><input type="submit" value="Borrar los datos"></span>
+
+        <button type ="button" onclick="location.href='Lista.html'">Volver al menú</button>
 
 </body>
 
 </html>
+
